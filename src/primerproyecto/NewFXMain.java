@@ -30,6 +30,7 @@ public class NewFXMain extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("FXML.fxml"));
         
         Scene scene = new Scene(root);
+        scene.getStylesheets().add(getClass().getResource("estilo.css").toExternalForm());
         
         
         stage.setTitle("HOLA");
